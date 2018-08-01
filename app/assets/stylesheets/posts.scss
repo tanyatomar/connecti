@@ -1,3 +1,91 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#posts-home{
+	
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 25px;
+	
+
+	.deewar-posts{
+		width: 50%;
+		border-right: 1px dashed #007effe0;
+		border-left: 1px dashed #007effe0;
+		background-color: #a1d66378;
+
+		.new-post-form{
+			display: flex;
+			justify-content: center;
+			font-size: 20px;
+
+
+			.new_comment
+			{
+			#comment_content
+			{
+			border-radius: 15px;
+    		width: 370px;
+			}
+			}
+
+			#new_post
+			{
+			#post_content
+			{
+			
+			block-size: 100px;
+				border-radius: 20px;
+				width: 400px;
+			}
+			}
+			
+			
+			form{
+			display: flex;
+				flex-direction: column;
+				
+			}
+			
+		}
+
+		.posts-list{
+
+		font-size: 25px;
+		padding-left: 25px;
+
+		.box
+		{
+		    background-color: #4ec3b48f;
+    border-radius: 11px;
+    margin-right: 21px;
+		}
+		.new
+		{
+		   font-size: 15px;
+		}
+		p:first-class
+		{
+		color: blue;	
+		}
+
+		.new1
+		{
+		        background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin: 15px;
+		}
+		}
+	}
+
+}
+.heads
+{
+	    color: #1206a0;
+    font-size: 20px;
+    font-style: inherit;
+        background-color: #b16b2f9e;
+    border-radius: 20px;
+    padding-right: 60px;
+}

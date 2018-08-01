@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+	margin: 0;
+
+
+background-image: url(
+"https://life-invader-fb.herokuapp.com/assets/invaderlogin-5308defac1256d016aa03b4dd149f538a10a0b18d6bc9e3914e9270d799885e8.jpg");
+
+.login-form{
+	        width: 400px;
+    display: inline-block;
+    margin-left: 450px;
+    margin-top: 127px;
+   
+    
+}
+	#common-header{
+		display: flex;
+		justify-content: space-around;
+		box-shadow: 1px 4px 1px 1px lightgrey;
+		background-color: black;
+
+		.logo{
+			width: 40%;
+			text-align: left;
+
+		}
+
+		.auth-info-links{
+			width: 40%;
+			text-align: right;
+
+			display: flex;
+			justify-content: flex-end;
+
+			p:first-child{
+				margin-right: 15px;
+				color: white;
+			}
+			a
+			{
+			color: powderblue;
+			}
+		}
+
+	}
+
+
+}
+h2
+{
+border-radius: 15px;
+	font-size: 40px;
+	 text-align: center;
+	 background-color: green;
+	 margin: 0px;
+}
+.reg-form
+{
+border-radius: 30px;
+padding: 50px;
+	 display: flex;
+    justify-content: center;
+    background-color: #ffc0cb96;
+    font-size: 25px;
+}
+.end
+{
+border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	    background-color: #9acd32bf;
+    margin: 0px;
+}

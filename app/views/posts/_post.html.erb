@@ -1,0 +1,29 @@
+<li id="post-<%= post.id %>">
+	<div class="box">
+
+		<p class="new"><%= post.user.email %></p>
+		<p class="new1"><%= post.content %></p>
+		<% if user_signed_in? && post.user_id ==  current_user.id %>
+		<p class="new"><%= link_to "Delete", destroy_post_path(post.id), method: :delete, remote: true %></p>
+		<% end %>
+
+		<% if user_signed_in? %>
+		<p>
+			<sub id="post-<%= post.id %>-likes" class="post-like-status">
+				<%= render 'post_like_link', post: post %>
+			</sub>
+		</p>
+		<% else %>
+		<sub class="new">
+				<%= post.likes.length %> Likes
+		
+			</sub>
+
+		<% end %>
+
+		<div>
+			<%= render 'comments/post_comment', post: post %>
+		</div>
+		
+	</div>
+</li>
